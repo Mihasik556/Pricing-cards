@@ -18,7 +18,7 @@ The main goal was to improve basic web development skills, work with Flexbox, an
 ## 🚀 Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/Pricing-cards.git
+   git clone https://github.com/Mihasik556/Pricing-cards.git
    ```
 2. Open index.html in your browser.
 No additional dependencies required.
