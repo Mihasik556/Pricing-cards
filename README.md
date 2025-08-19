@@ -18,7 +18,7 @@ The main goal was to improve basic web development skills, work with Flexbox, an
 ## 🚀 Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repo-name.git
+   git clone https://github.com/username/Pricing-cards.git
    ```
 2. Open index.html in your browser.
 No additional dependencies required.
@@ -26,7 +26,6 @@ No additional dependencies required.
 ## 💡 What I Learned
 - Working with Flexbox
 - Structuring a simple project (html, css, images)
-- Writing and styling a README file
 
 ⭐ If you like this project, feel free to give it a star on GitHub!
 
