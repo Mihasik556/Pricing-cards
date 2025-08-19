@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+/* Start Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/* End Reset */
+/* Start Utility Classes */
+
+.per-month {
+    font-size: 14px;
+}
+
+/* End Utility Classes */
+
+body {
+    font-size: 1.2rem;
+    font-family: "Roboto mono";
+    min-height: 100%;
+    background-color: #e3ddd2;
+    background-position: center;
+    line-height: 2.3rem;
+}
+
+.header-text {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: #454438;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.card {
+    border: 2px solid #333;
+    border-radius: 10%;
+    width: 400px;
+    background-color: #c1b49c;
+    color: #454438;
+    box-shadow: 1px 2px 5px black;
+}
+
+.most {
+    box-shadow: 1px 2px 5px black, 0 0 5px 5px rgb(16, 90, 16);
+}
+
+.card-name-cheap,
+.card-name-prem {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px dashed #333;
+}
+
+.std-row {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px dashed #333;
+}
+
+.most-b {
+    color: rgb(16, 90, 16);
+}
+
+.feat {
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.cheap li::before {
+    content: "-";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    padding-left: 0.1rem;
+    background-size: contain;
+}
+
+.std li::before,
+.prem li::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    background-image: url("../images/checkmark.svg");
+    background-size: contain;
+}
+
+.cheap li:first-child::before,
+.cheap li:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    background-image: url("../images/checkmark.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.std li:nth-child(5)::before,
+.std li:last-child::before {
+    content: "-";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    padding-left: 0.1rem;
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #333;
+    padding-top: 1.5rem;
+    margin: 1rem 0 0.2rem 0;
+}
+
+.price {
+    display: inline-block;
+    height: min-content;
+    font-size: 2.3rem;
+    padding: 1px 0 0 1.5rem;
+}
+
+.select-button {
+    max-height: 38.8px;
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 1.5rem 15px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #454438;
+}
+
+.select-button:focus {
+    outline: none;
+}
+
+.select-button img {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.select-button:hover img {
+    border-radius: 9px;
+    background-color: #b7ac98;
+}
+
+.select-button:active {
+    box-shadow: none;
+}
+.select-button:active img {
+    transform: scale(0.98);
+}
+
+@media screen and (max-width: 376px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-text {
+        font-size: 2rem;
+        position: sticky;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        top: 0;
+        background-color: #e3ddd2;
+        z-index: 10;
+        padding: 0.5rem 0;
+    }
+
+    .container {
+        overflow-x: auto;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        gap: 1.5rem;
+        padding: 0 1rem;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 495px;
+    }
+
+    .card {
+        width: 350px;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+    .card:first-child {
+        margin-left: 0;
+    }
+
+    .card:last-child {
+        margin-right: 1rem;
+    }
+}
