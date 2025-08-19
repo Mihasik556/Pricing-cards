@@ -1,4 +1,4 @@
-# 📝 Project Title
+# 📝 Pricing Cards
 
 ![Project Preview](images/preview.png)
 
